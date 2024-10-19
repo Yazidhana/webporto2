@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Data Mahasiswa</title>
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style1.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+    <style>
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.8em;
+            color: #e0e0e0;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 150px;
+            height: 4px;
+            background: #e0e0e0;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        table {
+            width: 90%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        th {
+            background-color: #1e272e;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+        }
+
+        tr {
+            transition: background-color 0.3s;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: #1e272e;
+            color: #e0e0e0;
+        }
+
+        .footer-social-icons .icon {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .footer-social-icons .icon a {
+            color: #fff;
+            font-size: 1.6em;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .footer-social-icons .icon a:hover {
+            transform: scale(1.2);
+            color: #ffffff;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #ff9f43;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #1e272e;
+        }
+
+        .nav-logo p {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #f7f7f7;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav_menu_list .nav-list a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .nav_menu_list .nav-list a:hover {
+            color: #ff9f43;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2em;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            .nav-menu ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Yazid</p>
+            <span></span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list"><a href="index (1).html" class="nav-link active-link">Home</a></li>
+                <li class="nav_list"><a href="newtable.html" class="nav-link">Table</a></li>
+                <li class="nav_list"><a href="from.html" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <h2>Data Mahasiswa</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Semester 1</th>
+                <th>Semester 2</th>
+                <th>Semester 3</th>
+                <th>Semester 4</th>
+                <th>Semester 5</th>
+                <th>Semester 6</th>
+                <th>Semester 7</th>
+                <th>Semester 8</th>
+                <th>Jurusan</th>
+                <th>Fakultas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>522031180</td>
+                <td>Ahmad Roziqin</td>
+                <td>3.5</td>
+                <td>3.6</td>
+                <td>3.7</td>
+                <td>3.8</td>
+                <td>3.9</td>
+                <td>3.8</td>
+                <td>4.0</td>
+                <td>3.9</td>
+                <td>Teknik Informatika</td>
+                <td>Teknik</td>
+            </tr>
+            <tr>
+                <td>522031101</td>
+                <td>Adam Bastian</td>
+                <td>3.4</td>
+                <td>3.5</td>
+                <td>3.6</td>
+                <td>3.7</td>
+                <td>3.8</td>
+                <td>3.9</td>
+                <td>3.8</td>
+                <td>4.0</td>
+                <td>Arsitektur</td>
+                <td>Teknik</td>
+            </tr>
+            <tr>
+                <td>5220311064</td>
+                <td>Hafidz Hanizar</td>
+                <td>3.4</td>
+                <td>3.5</td>
+                <td>3.6</td>
+                <td>3.7</td>
+                <td>3.8</td>
+                <td>3.5</td>
+                <td>3.4</td>
+                <td>3.0</td>
+                <td>Sistem Informasi</td>
+                <td>Sains dan Teknologi</td>
+            </tr>
+            <tr>
+                <td>5220311063</td>
+                <td>Ernando Min</td>
+                <td>3.4</td>
+                <td>3.5</td>
+                <td>3.6</td>
+                <td>3.7</td>
+                <td>3.8</td>
+                <td>3.5</td>
+                <td>3.7</td>
+                <td>4.0</td>
+                <td>Sistem Informasi</td>
+                <td>Sains dan Teknologi</td>
+            </tr>
+            <tr>
+                <td>5220311062</td>
+                <td>Hamin Nor</td>
+                <td>3.4</td>
+                <td>3.5</td>
+                <td>3.6</td>
+                <td>3.7</td>
+                <td>3.0</td>
+                <td>3.0</td>
+                <td>3.7</td>
+                <td>2.9</td>
+                <td>Sistem Informasi</td>
+                <td>Sains dan Teknologi</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="index.html" class="back-link">Kembali</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social-icons">
+            <div class="icon">
+                <a href="https://www.instagram.com/yzd08_/" target="_blank"><i class="uil uil-instagram"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.github.com" target="_blank"><i class="uil uil-github-alt"></i></a>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; zyd - All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
